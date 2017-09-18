@@ -1,0 +1,31 @@
+.example-container {
+    width: auto;
+    height: 500px;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 10px;
+    background-color: #3f51b5;
+  }
+  /* md-sidenav {
+    width: 200px;
+  } */
+
+  .sidenav-item{
+      color: white;
+      font-size:20px; 
+  }
+
+  md-icon{
+    font-size:45px;
+    height:45px;
+    width: 45px;
+    color: white;
+}

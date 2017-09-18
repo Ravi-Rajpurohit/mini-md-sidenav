@@ -1,0 +1,50 @@
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }"
+   opened="true" (mouseover)="increase()"
+    (mouseleave)="decrease()">
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div fxFlex="30">
+        <md-icon>home</md-icon>
+      </div>
+      <div fxFlex="70" *ngIf="sidenavWidth > 6" class="sidenav-item">
+        SideNav Item A
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div fxFlex="30">
+        <md-icon>mail outline</md-icon>
+      </div>
+      <div fxFlex="70" *ngIf="sidenavWidth > 6" class="sidenav-item">
+        SideNav Item B
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div fxFlex="30">
+        <md-icon>shopping cart</md-icon>
+      </div>
+      <div fxFlex="70" *ngIf="sidenavWidth > 6" class="sidenav-item">
+        SideNav Item C
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div fxFlex="30">
+        <md-icon>backup</md-icon>
+      </div>
+      <div fxFlex="70" *ngIf="sidenavWidth > 6" class="sidenav-item">
+        SideNav Item D
+      </div>
+    </div>
+  </md-sidenav>
+
+  <div class="example-sidenav-content">
+    <!-- <button type="button" md-button (mouseover)="sidenav.open()" (mouseleave)="sidenav.close()">
+      Open sidenav
+    </button> -->
+    Hello Mr.Psycho
+  </div>
+
+  
+</md-sidenav-container>
