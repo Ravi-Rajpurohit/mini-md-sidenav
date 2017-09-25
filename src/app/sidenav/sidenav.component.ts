@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'sidenav',
@@ -6,17 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
-  sidenavWidth = 4.5;
+  sidenavWidth = 4;
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
   }
 
   increase(){
     this.sidenavWidth = 15;
+    console.log("increase sidenav width");
   }
   decrease(){
-    this.sidenavWidth = 4.5;
+    this.sidenavWidth = 4;
+    console.log("decrease sidenav width");
   }
 }

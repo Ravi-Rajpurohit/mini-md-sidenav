@@ -1,50 +1,42 @@
-<md-sidenav-container class="example-container">
-  <md-sidenav #sidenav mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }"
-   opened="true" (mouseover)="increase()"
+<md-sidenav-container fullscreen>
+  <md-sidenav #sidenav mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true" (mouseover)="increase()"
     (mouseleave)="decrease()">
-    <div fxLayout="row" fxLayoutAlign="start center">
-      <div fxFlex="30">
-        <md-icon>home</md-icon>
-      </div>
-      <div fxFlex="70" *ngIf="sidenavWidth > 6" class="sidenav-item">
-        SideNav Item A
-      </div>
-    </div>
 
-    <div fxLayout="row" fxLayoutAlign="start center">
-      <div fxFlex="30">
-        <md-icon>mail outline</md-icon>
-      </div>
-      <div fxFlex="70" *ngIf="sidenavWidth > 6" class="sidenav-item">
-        SideNav Item B
-      </div>
-    </div>
+    <md-nav-list>
 
-    <div fxLayout="row" fxLayoutAlign="start center">
-      <div fxFlex="30">
-        <md-icon>shopping cart</md-icon>
-      </div>
-      <div fxFlex="70" *ngIf="sidenavWidth > 6" class="sidenav-item">
-        SideNav Item C
-      </div>
-    </div>
+      <md-list-item routerLink="1" routerLinkActive="active" >
+        <md-icon md-list-icon>link</md-icon>
+        <div fxFlex="10"></div>
+        <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+          <h5>Component 1</h5>
+        </div>
+      </md-list-item>
 
-    <div fxLayout="row" fxLayoutAlign="start center">
-      <div fxFlex="30">
-        <md-icon>backup</md-icon>
-      </div>
-      <div fxFlex="70" *ngIf="sidenavWidth > 6" class="sidenav-item">
-        SideNav Item D
-      </div>
-    </div>
+      <md-list-item routerLink="2" routerLinkActive="active">
+        <md-icon md-list-icon>face</md-icon>
+        <div fxFlex="10"></div>
+        <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+          <h5>Component 2</h5>
+        </div>
+      </md-list-item>
+
+      <md-list-item routerLink="3" routerLinkActive="active">
+        <md-icon md-list-icon>home</md-icon>
+        <div fxFlex="10"></div>
+        <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+          <h5>Component 3</h5>
+        </div>
+      </md-list-item>
+
+      
+
+    </md-nav-list>
+
   </md-sidenav>
 
   <div class="example-sidenav-content">
-    <!-- <button type="button" md-button (mouseover)="sidenav.open()" (mouseleave)="sidenav.close()">
-      Open sidenav
-    </button> -->
-    Hello Mr.Psycho
+    <router-outlet></router-outlet>
   </div>
 
-  
+
 </md-sidenav-container>
