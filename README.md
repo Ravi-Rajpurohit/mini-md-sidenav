@@ -1,32 +1,25 @@
-# MiniSidenav
+# Mini md-sidenav
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+This project contains mini varient of [md-sidenav](https://material.angular.io/components/sidenav/overview) i.e Navigation Drawer of angular material 2.
+As defined in the Google Material guidelines: https://material.io/guidelines/patterns/navigation-drawer.html#navigation-drawer-behavior
+
+## Mini variant Of Sidenav:
+
+In this variation, the persistent navigation drawer changes its width. Its resting state is as a mini-drawer at the same elevation as the content, clipped by the app bar. When expanded, it appears as the standard persistent navigation drawer.
+
+## Example
+
+![Mini Sidenav](https://cloud.githubusercontent.com/assets/1202936/8023412/a6d190f4-0ce1-11e5-86b9-55448c4ae6bd.png)
 
 ## Demo
 
 https://mini-sidenav.firebaseapp.com
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+Clone this project and type `npm install` to install the required node modules and then `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Contribution 
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+People who wants to contribute are most welcome.
