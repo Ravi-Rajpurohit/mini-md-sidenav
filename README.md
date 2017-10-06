@@ -22,4 +22,5 @@ Clone this project and type `npm install` to install the required node modules a
 
 ## Contribution 
 
+Have a suggestion or found a bug? Fork this project to help make it even better.
 People who wants to contribute are most welcome.
