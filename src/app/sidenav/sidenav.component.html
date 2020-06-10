@@ -1,42 +1,41 @@
-<md-sidenav-container fullscreen>
-  <md-sidenav #sidenav mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true" (mouseenter)="increase()"
-    (mouseleave)="decrease()">
-
-    <md-nav-list>
-
-      <md-list-item routerLink="1" routerLinkActive="active" >
-        <md-icon md-list-icon>link</md-icon>
+<mat-sidenav-container fullscreen>
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    class="example-sidenav"
+    [ngStyle]="{ 'width.em': sidenavWidth }"
+    opened="true"
+    (mouseenter)="increase()"
+    (mouseleave)="decrease()"
+  >
+    <mat-nav-list>
+      <mat-list-item routerLink="1" routerLinkActive="active">
+        <mat-icon mat-list-icon>link</mat-icon>
         <div fxFlex="10"></div>
         <div *ngIf="sidenavWidth > 6" class="sidenav-item">
           <h5>Component 1</h5>
         </div>
-      </md-list-item>
+      </mat-list-item>
 
-      <md-list-item routerLink="2" routerLinkActive="active">
-        <md-icon md-list-icon>face</md-icon>
+      <mat-list-item routerLink="2" routerLinkActive="active">
+        <mat-icon mat-list-icon>face</mat-icon>
         <div fxFlex="10"></div>
         <div *ngIf="sidenavWidth > 6" class="sidenav-item">
           <h5>Component 2</h5>
         </div>
-      </md-list-item>
+      </mat-list-item>
 
-      <md-list-item routerLink="3" routerLinkActive="active">
-        <md-icon md-list-icon>home</md-icon>
+      <mat-list-item routerLink="3" routerLinkActive="active">
+        <mat-icon mat-list-icon>home</mat-icon>
         <div fxFlex="10"></div>
         <div *ngIf="sidenavWidth > 6" class="sidenav-item">
           <h5>Component 3</h5>
         </div>
-      </md-list-item>
-
-      
-
-    </md-nav-list>
-
-  </md-sidenav>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
 
   <div class="example-sidenav-content">
     <router-outlet></router-outlet>
   </div>
-
-
-</md-sidenav-container>
+</mat-sidenav-container>
