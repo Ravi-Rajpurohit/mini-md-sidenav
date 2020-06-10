@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { Component1Component } from './component-1.component';
 
 describe('Component1Component', () => {
@@ -7,19 +6,19 @@ describe('Component1Component', () => {
   let fixture: ComponentFixture<Component1Component>;
 
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ Component1Component ]
-    })
-    .compileComponents();
+	TestBed.configureTestingModule({
+		declarations: [ Component1Component ],
+	})
+	.compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Component1Component);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+	fixture = TestBed.createComponent(Component1Component);
+	component = fixture.componentInstance;
+	fixture.detectChanges();
   });
 
   it('should be created', () => {
-    expect(component).toBeTruthy();
+	expect(component).toBeTruthy();
   });
 });
